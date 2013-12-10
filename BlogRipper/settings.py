@@ -12,5 +12,5 @@ SPIDER_MODULES = ['BlogRipper.spiders']
 NEWSPIDER_MODULE = 'BlogRipper.spiders'
 
 FEED_EXPORTERS = {
-    'html': 'BlogRipper.exporters.HtmlItemExporter',
+    'md': 'BlogRipper.exporters.MarkdownItemExporter',
 }
