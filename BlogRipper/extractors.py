@@ -1,6 +1,6 @@
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor as BuggySgmlLinkExtractor
 
-class SgmlLinkExtractor(BuggySgmlLinkExtractor):
+class MySgmlLinkExtractor(BuggySgmlLinkExtractor):
     
     def __init__(self, allow):
         BuggySgmlLinkExtractor.__init__(self, allow=allow)
