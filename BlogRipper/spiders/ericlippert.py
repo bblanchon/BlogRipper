@@ -17,6 +17,9 @@ class EriclippertSpider(CrawlSpider):
                 restrict_xpaths="//a[@class='selected']/following-sibling::a[@class='page']"), 
             follow=True, callback='parse_page'),
     )
+    
+    def parse_start_url(self, response):
+        return self.parse_page(response)
 
     def parse_page(self, response):
         links = self.link_extractor.extract_links(response)        
