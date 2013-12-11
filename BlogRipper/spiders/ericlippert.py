@@ -1,10 +1,8 @@
-from scrapy.contrib.loader import XPathItemLoader
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor 
 from scrapy.http import Request
 from scrapy.spider import BaseSpider
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor 
-from BlogRipper.items import BlogripperItem
 from BlogRipper.extractors import MySgmlLinkExtractor
-from scrapy.contrib.loader.processor import MapCompose, TakeFirst
+from BlogRipper.items import BlogripperItem
 
 class EriclippertSpider(BaseSpider):
     name = 'ericlippert'
@@ -19,5 +17,6 @@ class EriclippertSpider(BaseSpider):
         links = self.article_extractor.extract_links(response)  
         for l in links:
             yield BlogripperItem(l.text, l.url)            
-        next_page = self.next_page_extractor.extract_links(response)[0]
-        yield Request(next_page.url, callback=self.parse)
+        next_pages = self.next_page_extractor.extract_links(response)
+        if next_pages:
+            yield Request(next_pages[0].url)
