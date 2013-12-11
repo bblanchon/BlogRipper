@@ -8,6 +8,8 @@
 
 BOT_NAME = 'BlogRipper'
 
+LOG_LEVEL = 'INFO'
+
 SPIDER_MODULES = ['BlogRipper.spiders']
 NEWSPIDER_MODULE = 'BlogRipper.spiders'
 
