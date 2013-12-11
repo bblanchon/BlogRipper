@@ -1,9 +1,14 @@
 #!/bin/bash
 
+DIR=output
+
 function crawl {
-	echo "$2" > $1.md
-	echo "=" >> $1.md
-	scrapy crawl $1 -t md -o $1.md
+	SPIDER=$1
+	TITLE=$2
+	FILE="$DIR/$SPIDER.md"
+	echo "$TITLE" > $FILE
+	echo "=" >> $FILE
+	scrapy crawl $SPIDER -t md -o $FILE
 }
 
 crawl "ericlippert_msdn" "Eric Lippert (MSDN)"
