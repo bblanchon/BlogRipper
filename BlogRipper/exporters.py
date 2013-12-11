@@ -14,4 +14,4 @@ class HtmlItemExporter(BaseItemExporter):
         
     def export_item(self, item):
         itemdict = dict(self._get_serialized_fields(item))
-        self.file.write("<li><a href='%s'>%s</a></li>\n" % (item['url'], item['title']))
+        self.file.write("<li><a href='%s'>%s</a></li>\n" % (item['url'], item['title'].encode('utf-8')))
