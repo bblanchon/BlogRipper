@@ -1,17 +1,12 @@
 from scrapy.contrib.exporter import BaseItemExporter
 
-class HtmlItemExporter(BaseItemExporter):
-
+class MarkdownItemExporter(BaseItemExporter):
+    
     def __init__(self, file, **kwargs):
         self._configure(kwargs)
         self.file = file
-
-    def start_exporting(self):
-        self.file.write("<html><body><ol>")
-
-    def finish_exporting(self):
-        self.file.write("</ol></body></html>")
+        self.count = 0
         
     def export_item(self, item):
-        itemdict = dict(self._get_serialized_fields(item))
-        self.file.write("<li><a href='%s'>%s</a></li>\n" % (item['url'], item['title'].encode('utf-8')))
+        self.count += 1
+        self.file.write("%d. [%s](%s)\n" % (self.count, item['title'].encode('utf-8'), item['url']))
