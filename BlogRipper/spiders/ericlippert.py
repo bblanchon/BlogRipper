@@ -2,7 +2,7 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.http import Request
 from scrapy.spider import BaseSpider
 from BlogRipper.extractors import MySgmlLinkExtractor
-from BlogRipper.items import BlogripperItem
+from BlogRipper.items import ArticleItem
 
 class EriclippertSpider(BaseSpider):
     name = 'ericlippert'
@@ -14,9 +14,9 @@ class EriclippertSpider(BaseSpider):
                 restrict_xpaths="//a[@class='selected']/following-sibling::a[@class='page']")
 
     def parse(self, response):
-        links = self.article_extractor.extract_links(response)  
-        for l in links:
-            yield BlogripperItem(l.text, l.url)            
+        articles = self.article_extractor.extract_links(response)  
+        for l in articles:
+            yield ArticleItem(l.text, l.url)            
         next_pages = self.next_page_extractor.extract_links(response)
         if next_pages:
             yield Request(next_pages[0].url)
