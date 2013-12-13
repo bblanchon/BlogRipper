@@ -15,8 +15,11 @@ class EriclippertMsdnSpider(BaseSpider):
 
     def parse(self, response):
         articles = self.article_extractor.extract_links(response)  
-        for l in articles:
-            yield ArticleItem(l.text, l.url)            
+        for link in articles:
+            item = ArticleItem()      
+            item['title'] = link.text
+            item['url'] = link.url
+            yield item
         next_pages = self.next_page_extractor.extract_links(response)
         if next_pages:
             yield Request(next_pages[0].url)
