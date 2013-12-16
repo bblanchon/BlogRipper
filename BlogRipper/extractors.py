@@ -2,8 +2,8 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor as BuggySgmlLin
 
 class MySgmlLinkExtractor(BuggySgmlLinkExtractor):
     
-    def __init__(self, allow):
-        BuggySgmlLinkExtractor.__init__(self, allow=allow)
+    def __init__(self, allow, restrict_xpaths=()):
+        BuggySgmlLinkExtractor.__init__(self, allow=allow, restrict_xpaths=restrict_xpaths)
         
     def unknown_endtag(self, tag):
         if self.scan_tag(tag):
