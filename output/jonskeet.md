@@ -1,6 +1,6 @@
 Jon Skeet
 =
-Mon Dec 16 13:47:05 CET 2013
+Mon Dec 16 13:54:52 CET 2013
 
 1. [Career and skills advice](http://msmvps.com/blogs/jon_skeet/archive/2013/09/21/career-and-skills-advice.aspx)
 2. [Casting vs "as" - embracing exceptions](http://msmvps.com/blogs/jon_skeet/archive/2013/09/19/casting-vs-quot-as-quot-embracing-exceptions.aspx)
