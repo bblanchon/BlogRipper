@@ -1,6 +1,7 @@
 Eric Lippert (MSDN)
 =
-Mon Dec 16 13:40:43 CET 2013
+Mon Dec 16 13:43:24 CET 2013
+
 1. [A new fabulous adventure](http://blogs.msdn.com/b/ericlippert/archive/2012/11/29/a-new-fabulous-adventure.aspx)
 2. [Why is deriving a public class from an internal class illegal?](http://blogs.msdn.com/b/ericlippert/archive/2012/11/13/why-is-deriving-a-public-class-from-an-internal-class-illegal.aspx)
 3. [It's still essential!](http://blogs.msdn.com/b/ericlippert/archive/2012/11/09/it-s-still-essential.aspx)

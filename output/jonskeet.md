@@ -1,6 +1,7 @@
 Jon Skeet
 =
-Mon Dec 16 13:41:11 CET 2013
+Mon Dec 16 13:43:52 CET 2013
+
 1. [Career and skills advice](http://msmvps.com/blogs/jon_skeet/archive/2013/09/21/career-and-skills-advice.aspx)
 2. [Casting vs "as" - embracing exceptions](http://msmvps.com/blogs/jon_skeet/archive/2013/09/19/casting-vs-quot-as-quot-embracing-exceptions.aspx)
 3. [Array covariance: not just ugly, but slow too](http://msmvps.com/blogs/jon_skeet/archive/2013/06/22/array-covariance-not-just-ugly-but-slow-too.aspx)
