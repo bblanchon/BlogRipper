@@ -31,3 +31,9 @@ class BlogSpider(BaseSpider):
         next_pages = self.next_page_extractor.extract_links(response)
         if next_pages:
             yield Request(next_pages[0].url)
+           
+           
+class MicrosoftBlogSpider(BlogSpider):
+    allowed_domains = ['blogs.msdn.com', 'msmvps.com']
+    article_regex = r'/archive/\d{4}/\d{2}/\d{2}/[^#]+$'
+    next_page_regex = r'/default.aspx\?PageIndex=\d+$'
