@@ -5,10 +5,13 @@ DIR=output
 function crawl {
 	SPIDER=$1
 	TITLE=$2
-	FILE="$DIR/$SPIDER.md"
-	echo "$TITLE" > $FILE
-	echo "=" >> $FILE
-	scrapy crawl $SPIDER -t md -o $FILE
+	(
+		echo "$TITLE"
+		echo "="
+		date
+		scrapy crawl $SPIDER -t md -o -
+		echo "http://blog.benoitblanchon.fr/"
+	) > $DIR/$SPIDER.md
 }
 
 crawl "ericlippert_msdn" "Eric Lippert (MSDN)"

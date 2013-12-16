@@ -1,5 +1,6 @@
 Jon Skeet
 =
+Mon Dec 16 13:41:11 CET 2013
 1. [Career and skills advice](http://msmvps.com/blogs/jon_skeet/archive/2013/09/21/career-and-skills-advice.aspx)
 2. [Casting vs "as" - embracing exceptions](http://msmvps.com/blogs/jon_skeet/archive/2013/09/19/casting-vs-quot-as-quot-embracing-exceptions.aspx)
 3. [Array covariance: not just ugly, but slow too](http://msmvps.com/blogs/jon_skeet/archive/2013/06/22/array-covariance-not-just-ugly-but-slow-too.aspx)
@@ -385,3 +386,4 @@ Jon Skeet
 383. [LINQ, DLinq, XLinq and C# 3.0](http://msmvps.com/blogs/jon_skeet/archive/2005/09/28/linq-dlinq-xlinq-and-c-3-0.aspx)
 384. [Overuse of regular expressions](http://msmvps.com/blogs/jon_skeet/archive/2005/09/21/67247.aspx)
 385. [Welcome!](http://msmvps.com/blogs/jon_skeet/archive/2005/09/15/66546.aspx)
+http://blog.benoitblanchon.fr/
