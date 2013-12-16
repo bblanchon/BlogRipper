@@ -1,6 +1,7 @@
 Eric Lippert (MSDN)
 =
-Mon Dec 16 13:40:43 CET 2013
+Mon Dec 16 13:46:34 CET 2013
+
 1. [A new fabulous adventure](http://blogs.msdn.com/b/ericlippert/archive/2012/11/29/a-new-fabulous-adventure.aspx)
 2. [Why is deriving a public class from an internal class illegal?](http://blogs.msdn.com/b/ericlippert/archive/2012/11/13/why-is-deriving-a-public-class-from-an-internal-class-illegal.aspx)
 3. [It's still essential!](http://blogs.msdn.com/b/ericlippert/archive/2012/11/09/it-s-still-essential.aspx)
@@ -784,4 +785,5 @@ Mon Dec 16 13:40:43 CET 2013
 781. [What's Up With Hungarian Notation?](http://blogs.msdn.com/b/ericlippert/archive/2003/09/12/what-s-up-with-hungarian-notation.aspx)
 782. [Eric's Complete Guide To BSTR Semantics](http://blogs.msdn.com/b/ericlippert/archive/2003/09/12/52976.aspx)
 783. [Fabulous Adventures!](http://blogs.msdn.com/b/ericlippert/archive/2003/09/12/fabulous-adventures.aspx)
+
 http://blog.benoitblanchon.fr/

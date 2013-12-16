@@ -9,7 +9,9 @@ function crawl {
 		echo "$TITLE"
 		echo "="
 		date
+		echo
 		scrapy crawl $SPIDER -t md -o -
+		echo
 		echo "http://blog.benoitblanchon.fr/"
 	) > $DIR/$SPIDER.md
 }
